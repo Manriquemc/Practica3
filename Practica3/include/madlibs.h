@@ -4,11 +4,12 @@
  */
 
 /* 
- * File:   madlibs.h
+ * File:   si.h
  * Author: manriquemc
  *
- * Created on 24 de abril de 2025, 16:15
+ * Created on 30 de abril de 2025, 16:47
  */
+
 
 #ifndef MADLIBS_H
 #define MADLIBS_H
@@ -21,14 +22,19 @@ public:
     madlibs();
     madlibs(const madlibs& orig);
     virtual ~madlibs();
-    string leerFichero(string fich);
-    string extraerSoluciones(string fich, int tam);
-    int numAciertos()
+    void leerFichero(string fich);
+    void extraerSoluciones();
+    string crearTextoSinSoluciones();
+    int numAciertos(string* palabrasUsuario, int argc);
+    void play();
 private:
     string *vectorSoluciones;
+    int tam_soluciones;
     string *v;
     int tam;
 };
 
 #endif /* MADLIBS_H */
+
+
 

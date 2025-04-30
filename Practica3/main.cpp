@@ -10,8 +10,10 @@
  * Created on 4 de abril de 2025, 16:25
  */
 
+#include "madlibs.h"
 #include <cstdlib>
-
+#include <iostream>
+#include <string>
 using namespace std;
 
 
@@ -19,7 +21,8 @@ using namespace std;
  * 
  */
 int main(int argc, char** argv) {
-
-    return 0;
+    madlibs Ejemplo;
+    Ejemplo.leerFichero("texto.txt");
+    Ejemplo.play();
 }
 

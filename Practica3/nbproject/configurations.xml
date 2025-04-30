@@ -37,6 +37,12 @@
         <rebuildPropChanged>false</rebuildPropChanged>
       </toolsSet>
       <compileType>
+        <ccTool>
+          <incDir>
+            <pElem>include</pElem>
+            <pElem>src</pElem>
+          </incDir>
+        </ccTool>
       </compileType>
       <item path="include/madlibs.h" ex="false" tool="3" flavor2="0">
       </item>
